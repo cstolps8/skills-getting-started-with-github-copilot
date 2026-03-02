@@ -12,5 +12,49 @@ Remember, it's self-paced so feel free to take a break! ☕️
 
 ---
 
+## Getting Started
+
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
+
+### Setup & Run
+
+1. **Create a virtual environment:**
+   ```bash
+   python3 -m venv .venv
+   ```
+
+2. **Activate the virtual environment:**
+   ```bash
+   # On macOS/Linux:
+   source .venv/bin/activate
+   
+   # On Windows:
+   .venv\Scripts\activate
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Start the application:**
+   ```bash
+   uvicorn src.app:app --reload --host 0.0.0.0 --port 8000
+   ```
+
+5. **Open in your browser:**
+   - Navigate to `http://localhost:8000/static/index.html`
+
+The application will automatically reload when you make code changes (due to the `--reload` flag).
+
+### Running Tests
+```bash
+pytest
+```
+
+---
+
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
